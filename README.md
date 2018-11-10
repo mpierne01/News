@@ -1,3 +1,5 @@
 # News
 
-#Home Page
+#Home Card
+
+#NewsArticle, Adapters, and RecyclerView
