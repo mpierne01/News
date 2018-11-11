@@ -1,5 +1,7 @@
 # News
 
-#Home Card
+# Home Card
 
-#NewsArticle, Adapters, and RecyclerView
+# NewsArticle, Adapters, and RecyclerView
+
+# Event Handling and Navigation

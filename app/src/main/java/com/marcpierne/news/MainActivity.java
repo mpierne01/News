@@ -2,6 +2,8 @@ package com.marcpierne.news;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.marcpierne.news.model.NewsArticle;
 
@@ -9,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private RecyclerView newsRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
