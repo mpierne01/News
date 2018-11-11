@@ -23,5 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 "https://cdn.cnn.com/cnnnext/dam/assets/181003085839-01-jamal-khashoggi-file-medium-tease.jpg", "today", "https://www.cnn.com/2018/11/10/middleeast/turkey-saudi-khashoggi-investigation-intl/index.html"));
 
         NewsStore.setNewsArticles(newsArticles);
+        NewsStore.setNewsArticles(newsArticles);
+
+        newsRecyclerView = (RecyclerView) findViewById(R.id.activity_main_recyclerview);
+        newsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        HomeNewsAdapter homeNewsAdapter = new HomeNewsAdapter(NewsStore.getNewsArticles());
+        newsRecyclerView.setAdapter(homeNewsAdapter);
     }
 }
