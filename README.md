@@ -6,4 +6,4 @@
 
 # Event Handling and Navigation
 
-# Adding in multi window features
+# Adding in multi window features in android manifest
