@@ -9,6 +9,7 @@
 # Adding in multi window features in android manifest
 
 # Networking
- - API
- - Retrofit networking Library
+ - API Structure
+ - Retrofit Networking Library by Square
  - API tests
+ - Build API 
