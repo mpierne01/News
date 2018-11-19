@@ -1,12 +1,14 @@
 package com.marcpierne.news.networking;
 
+import com.marcpierne.news.model.GetArticlesResponse;
 
-import com.marcpierne.news.GetArticlesResponse;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
+
+
 
 public class NewsAPI {
     private static final String APIKEY = "016a2ba67d664b179cf18d291a5c31db";

@@ -1,19 +1,24 @@
 package com.marcpierne.news;
-
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
+/* import com.marcpierne.news.model.NewsArticle;// */
+
+import com.marcpierne.news.model.GetArticlesResponse;
+import com.marcpierne.news.networking.NewsAPI;
+
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-import com.marcpierne.news.model.NewsArticle;
+import java.util.ArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 
 public class MainActivity extends AppCompatActivity {
