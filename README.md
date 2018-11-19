@@ -10,6 +10,7 @@
 
 # Networking
  - API Structure
+ - http://www.jsonschema2pojo.org/ tool to parse GSON
  - Retrofit Networking Library by Square
  - API tests
- - Build API 
+ - Build API
