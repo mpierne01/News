@@ -16,3 +16,7 @@
  - Build API
 
 # Implement Firebase and Crash Analytics
+
+# Added in Unit tests with Junit, power mock, and mockito for DateUtils
+
+# Refactored error on webview not supporting http

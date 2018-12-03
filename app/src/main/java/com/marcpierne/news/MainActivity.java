@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.activity_main);
         progressBar = (ProgressBar) findViewById(R.id.activity_main_progressbar);
 
-        Call<GetArticlesResponse> call = NewsAPI.getApi().getArticles("espn", "top");
+        Call<GetArticlesResponse> call = NewsAPI.getApi().getArticles("reuters", "top");
         call.enqueue(new Callback<GetArticlesResponse>() {
             @Override
             public void onResponse(Call<GetArticlesResponse> call, Response<GetArticlesResponse> response) {

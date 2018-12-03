@@ -6,6 +6,7 @@ import com.marcpierne.news.model.Article;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class NewsStore {
     private static List<Article> newsArticles = new ArrayList<>();
 

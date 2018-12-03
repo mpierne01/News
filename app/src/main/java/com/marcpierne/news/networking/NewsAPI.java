@@ -18,7 +18,7 @@ public class NewsAPI {
 
     public static NewsService getApi() {
         if(newsService == null) {
-            // initialize NewsService Singleton
+            // initialize NewsService
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(APIPATH)
                     .addConverterFactory(GsonConverterFactory.create())

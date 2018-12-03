@@ -17,6 +17,7 @@ import com.marcpierne.news.utils.DateUtils;
 import java.util.List;
 
 
+
 public class HomeNewsAdapter extends RecyclerView.Adapter<HomeNewsAdapter.HomeNewsViewHolder> {
     private List<Article> newsArticles;
 

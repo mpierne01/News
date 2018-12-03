@@ -14,6 +14,7 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+
 public class NewsDetailsActivity extends AppCompatActivity {
     private static final String KEY_INDEX = "news_index";
 
