@@ -1,6 +1,8 @@
 package com.marcpierne.news;
 
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,15 +10,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.marcpierne.news.model.NewsArticle;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.marcpierne.news.model.Article;
 
 import java.util.List;
 
 
 public class HomeNewsAdapter extends RecyclerView.Adapter<HomeNewsAdapter.HomeNewsViewHolder> {
-    private List<NewsArticle> newsArticles;
+    private List<Article> newsArticles;
 
-    public HomeNewsAdapter(List<NewsArticle> newsArticles) {
+    public HomeNewsAdapter(List<Article> newsArticles) {
         this.newsArticles = newsArticles;
     }
 
@@ -29,16 +32,21 @@ public class HomeNewsAdapter extends RecyclerView.Adapter<HomeNewsAdapter.HomeNe
 
     @Override
     public void onBindViewHolder(HomeNewsViewHolder holder, final int position) {
-        NewsArticle newsArticle = newsArticles.get(position);
-        Glide.with(holder.cardImageView.getContext()).load(newsArticle.getImageUrl())
+        Article newsArticle = newsArticles.get(position);
+        Glide.with(holder.cardImageView.getContext()).load(newsArticle.getUrlToImage())
                 .centerCrop()
                 .into(holder.cardImageView);
         holder.cardTitleTextView.setText(newsArticle.getTitle());
-        holder.cardTimeTextView.setText(newsArticle.getTime());
-        holder.cardContentTextView.setText(newsArticle.getDetails());
+        holder.cardTimeTextView.setText(DateUtils.formatNewsApiDate(newsArticle.getPublishedAt()));
+        holder.cardContentTextView.setText(newsArticle.getDescription());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // log analytics
+                FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(v.getContext());
+                Bundle bundle = new Bundle();
+                bundle.putString("index", String.valueOf(position));
+                firebaseAnalytics.logEvent("cardClicked", bundle);
                 NewsDetailsActivity.launch(v.getContext(), position);
             }
         });

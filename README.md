@@ -14,3 +14,5 @@
  - Retrofit Networking Library by Square
  - API tests
  - Build API
+
+# Implement Firebase and Crash Analytics

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "326860887355",
+    "firebase_url": "https://tuzz-news.firebaseio.com",
+    "project_id": "tuzz-news",
+    "storage_bucket": "tuzz-news.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326860887355:android:a11e30ea5d265113",
+        "android_client_info": {
+          "package_name": "com.marcpierne.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326860887355-rn72qme9mlengeupkpps51k0acg74i9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marcpierne.news",
+            "certificate_hash": "7e975b6ca2db53e119f0e01d0265043ec9957c0e"
+          }
+        },
+        {
+          "client_id": "326860887355-0l7230fhgld9iqcfq6o3k4o7ucfcrk33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs-oF2WPk98N_AXPujFL_W-yGGJqkzVEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326860887355-0l7230fhgld9iqcfq6o3k4o7ucfcrk33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
