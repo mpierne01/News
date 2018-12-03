@@ -14,13 +14,12 @@ import android.widget.Toast;
 
 import com.marcpierne.news.model.GetArticlesResponse;
 import com.marcpierne.news.networking.NewsAPI;
-
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import java.util.ArrayList;
-import java.util.List;
+
+/*import java.util.ArrayList;*/
+/*import java.util.List;*/
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        newsRecyclerView = (RecyclerView) findViewById(R.id.activity_main_recyclerview);
+        newsRecyclerView = (RecyclerView) findViewById(R.id.activity_main);
         newsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.activity_main);

@@ -2,7 +2,7 @@ package com.marcpierne.news;
 
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.text.format.DateUtils;
+/*import android.text.format.DateUtils;*/
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.marcpierne.news.model.Article;
+import com.marcpierne.news.utils.DateUtils;
 
 import java.util.List;
 
